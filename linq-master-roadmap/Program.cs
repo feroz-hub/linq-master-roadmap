@@ -1,4 +1,9 @@
-﻿static void Main()
+﻿using LinqMasterRoadmap.Introduction;
+public static class Program
 {
-    LinqVsTraditionalLoops.Run();
+    static void Main()
+    {
+        LinqVsTraditionalLoops.Run();
+    }
 }
+

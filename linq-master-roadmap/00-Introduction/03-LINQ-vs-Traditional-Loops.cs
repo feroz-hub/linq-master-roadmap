@@ -23,35 +23,33 @@ internal static class LinqVsTraditionalLoops
         {
             if (number > 10)
             {
-                result.Add(number);
+                results.Add(number);
             }
-
         }
-        Console.WriteLine("Traditional Loop Result:")
+
+        Console.WriteLine("Traditional Loop Result:");
         foreach (var number in results)
         {
-            Console.Write(number);
+            Console.WriteLine(number) ;
         }
-
         Console.WriteLine();
-
-
     }
 
     // --------------------------------------------
     // Example 2. LINQ Declarative Approach
+    
     // --------------------------------------------
     private static void LinqExample()
     {
         var numbers = new[] { 5, 12, 8, 20, 3, 18 };
 
-        var results = numbers.Where(numbers => numbers > 10)
+        var results = numbers.Where(numbers => numbers > 10);
 
 
-        Console.WriteLine("LINQ Result");
+        Console.WriteLine("LINQ Result: ");
         foreach (var number in results)
         {
-            Console.Write(number);
+            Console.WriteLine(number);
 
         }
     } 
